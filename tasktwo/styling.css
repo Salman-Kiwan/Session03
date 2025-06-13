@@ -4,13 +4,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .first-column {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 40px;
-  width: 330px;
+  width: 300px;
   padding: 10px;
 }
 .attribute {
-  font-size: 12px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 10px;
   color: rgb(116, 116, 116);
 }
 .img-container img {
@@ -22,28 +24,48 @@
   width: 100%;
 }
 .img-container {
-  height: 300px;
+  height: 280px;
 }
 .titles {
-  font-weight: bold;
-  font-size: 23px;
-  width: 150px;
-  height: 200px;
+  margin-bottom: 10px;
+  color: rgb(91, 90, 90);
+  font-weight: 550;
+  font-size: 20px;
+  width: 170px;
+  word-wrap: break-word;
 }
 .presedence-ind {
-  margin-left: 10px;
+  margin-left: 5px;
   background-color: rgba(0, 255, 255, 0.2);
   padding: 8px 18px 8px 18px;
   color: rgb(0, 85, 255);
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 3px;
-  text-align: right;
+  text-align: top;
+  flex-shrink: 0;
+  font-weight: bold;
 }
 .info {
   color: rgb(116, 116, 116);
   font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 1.6px;
 }
 /* .span-container {
   display: flex;
   justify-content: flex-end;
 } */
+.title-span-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.skills-info {
+  line-height: 2px;
+  font-size: 17px;
+}
+.section-divider {
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0; /* Spacing */
+}
