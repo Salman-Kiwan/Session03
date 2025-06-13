@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing Platform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      /* Left Side Styles */
+      .div1 {
+        background-color: rgb(39, 179, 255);
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .control1 {
+        width: 100%;
+        max-width: 530px;
+        padding: 20px;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .logo img {
+        width: 150px;
+        height: auto;
+      }
+
+      .discription1 {
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      .error1 {
+        background-color: rgb(246, 116, 116);
+        color: white;
+        font-size: 12px;
+        padding: 8px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+
+      .create-btn {
+        background-color: yellow;
+        color: black;
+        font-weight: 600;
+        border: none;
+        border-radius: 60px;
+        padding: 15px;
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 30px auto;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .login-stmt {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+      }
+
+      .login-stmt a {
+        color: yellow;
+        text-decoration: none;
+      }
+
+      /* Right Side Styles */
+      .div2 {
+        width: 50%;
+        padding: 60px;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+      }
+
+      .control-pannel-02 {
+        width: 100%;
+      }
+
+      .Heading-02 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 40px;
+        line-height: 1.3;
+      }
+
+      .features-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 40px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature-item img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .cta-container {
+        text-align: center;
+      }
+
+      .cta-button {
+        background-color: transparent;
+        color: #4caf50;
+        border: 2px solid #4caf50;
+        padding: 12px 24px;
+        border-radius: 60px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .cta-button span {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left Side (Signup Form) -->
+    <div class="div1">
+      <div class="control1">
+        <div class="logo">
+          <img src="351602.png" alt="Company Logo" />
+        </div>
+        <p class="discription1">Create a free account now</p>
+
+        <form action="" method="post">
+          <input type="text" placeholder="Full name" required />
+          <p class="error1">This field is required</p>
+
+          <input type="text" placeholder="Tracker record" />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+
+          <input class="create-btn" type="submit" value="CREATE ACCOUNT" />
+        </form>
+
+        <p class="login-stmt">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Right Side (Features) -->
+    <div class="div2">
+      <div class="control-pannel-02">
+        <h1 class="Heading-02">
+          Email marketing platform<br />
+          to grow your business
+        </h1>
+
+        <div class="features-container">
+          <!-- First Column -->
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Email marketing</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Advanced segmentation</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>All-powered, code-free website builder</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Marketing automation</p>
+          </div>
+
+          <!-- Second Column -->
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Highly engaging websites</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Signup forms and popups</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Advanced analytics and testing tools</p>
+          </div>
+          <div class="feature-item">
+            <img src="Capture.PNG" alt="Icon" />
+            <p>Automated sales, lead and webinar funnels</p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <button class="cta-button">
+            Start for free → <span>No credit card required</span> → Cancel
+            anytime
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
